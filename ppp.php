@@ -1,3 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #h2{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
 <?php
 $name = $email= $gender= $comment= $website="";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -38,7 +53,7 @@ function test_input($data) {
     <br><br>
     Email:<input type="text" name="email">
     <span class="error">*<?php echo $email?></span>
-<br><br>
+    <br><br>
     Website:<input type="text" name="website">
     <span class="error"><?php echo $website?></span>
     <br><br>
@@ -54,15 +69,6 @@ function test_input($data) {
 
 
 </form>
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
+
+</body>
+</html>
