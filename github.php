@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="assets/css/github3.css"/>
 </head>
-
 <body class="logged-out env-production page-responsive height-full d-flex flex-column header-overlay" style="word-wrap: break-word;">
     <main class="js-warp-hide bg-gray-dark-mktg d-flex flex-auto flex-column overflow-hidden position-relative">
         <div>
