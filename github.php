@@ -19,14 +19,16 @@
             background-image: linear-gradient(lightskyblue, lightcoral);
             margin-top: 0px;
         }
-        #ss{
+
+        #ss {
             text-align: center;
             color: #00bb00;
             margin-top: 15px;
 
 
         }
-        #paragraph{
+
+        #paragraph {
             text-align: center;
             color: #3bf0e4;
             padding-top: 20px;
@@ -36,7 +38,8 @@
             background-color: darkblue;
             align-items: center;
         }
-        #cd{
+
+        #cd {
             text-align: center;
             color: #9e7bff;
             background-color: #3300aa;
@@ -44,67 +47,79 @@
             text-align: center;
 
         }
+
         body {
             margin: 0;
             font-family: "Lato", sans-serif;
         }
 
-        .CARD{
+        .CARD {
             background-color: #3bf0e4;
             margin-top: 5px;
             margin-right: 450px;
             text-align: center;
         }
-        .btn-primary{
+
+        .btn-primary {
             background-color: blue;
             color: white;
         }
-        .btn-secondary{
+
+        .btn-secondary {
             background-color: darkred;
             color: white;
         }
-        .btn-success{
+
+        .btn-success {
             background-color: orangered;
             color: white;
         }
-        .btn-danger{
+
+        .btn-danger {
             background-color: #032f62;
             color: white;
         }
-        .btn-warning{
+
+        .btn-warning {
             background-color: #116644;
             color: white;
         }
-        .btn-light{
+
+        .btn-light {
             background-color: #3300aa;
             color: white;
 
         }
-        .btn-dark{
+
+        .btn-dark {
             background-color: deeppink;
             color: white;
         }
-        .btn-info{
+
+        .btn-info {
             background-color: purple;
             color: white;
         }
-        #H2{
+
+        #H2 {
             background-color: lightseagreen;
             color: white;
             text-align: center;
         }
-        .card-boy{
-        align-items: center;
+
+        .card-boy {
+            align-items: center;
             background-color: #614eda;
         }
 
     </style>
 
 </head>
-<body class="logged-out env-production page-responsive height-full d-flex flex-column header-overlay"
-      style="word-wrap: break-word;">
-<main class="js-warp-hide bg-gray-dark-mktg d-flex flex-auto flex-column overflow-hidden position-relative">
-
+<body class="logged-out env-production page-responsive height-full d-flex flex-column header-overlay" style="word-wrap: break-word;">
+<?php
+$text = 'my name is Alia.... and i am the BS student my name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS student';
+?>
+<div class="js-warp-hide bg-gray-dark-mktg d-flex flex-auto flex-column overflow-hidden position-relative">
 
     <div>
         <div class="signup-bg-stars"></div>
@@ -114,48 +129,55 @@
 
     <div id="head">
         <h1>my website</h1>
-
-
     </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-
-
-        <div class="card">
-            <div id="cd">
-                <div class="card Header"><h1>MY SELF</h1></div>
-            </div>
-            <div class="card-boy">
-                <div id="ss">
-                    <h2 class="card title"> my special page</h2>
+    <div class="row mt-5" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div id="cd">
+                    <div class="card Header"><h1>MY SELF</h1></div>
                 </div>
-               <div id="paragraph">
-                   <p class="card-text">my name is Alia.... and i am the BS student my name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS studentmy name is Alia.... and i am the BS student</p>
-               </div>
+                <div class="card-boy">
+                    <div id="ss">
+                        <h2 class="card title"> my special page</h2>
+                    </div>
+                    <div id="paragraph">
+                        <p class="card-text"><?php echo $text; ?></p>
+                    </div>
 
+                </div>
             </div>
         </div>
+        <div class="col-md-2"></div>
     </div>
-    <div class="col-md-2"></div>
-
-
-    <div class="CARD">
-        <div id="H2">
-            <h2>my fvrt color</h2>
+    <div class="row mt-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2>my fvrt color</h2>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <br><br>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <br><br>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+                <div class="card-footer">
+                    AliaZeeshan
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-success">Success</button><br><br>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-warning">Warning</button><br><br>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-light">Light</button>
-            <button type="button" class="btn btn-dark">Dark</button>
-        </div>
+        <div class="col-md-2"></div>
     </div>
 
-
+</div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
