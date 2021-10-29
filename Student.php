@@ -1,57 +1,37 @@
 <?php
 
 
-class fruits
+class Student
 {
-    public $name;
-    public $color;
+public $Id, $name, $email, $password, $address;
+public function __construct()
+{
+    $this->Id ='';
+    $this->name ='';
+    $this->email ='';
+    $this->password ='';
+    $this->address ='';
 }
-function set_name($name){
-    $this->name=$name;
+public function addStudent($Id, $name, $email, $password, $address){
+     $this->Id=1;
+     $this->name=$name;
+     $this->email=$email;
+     $this->password=$password;
+     $this->address=$address;
 }
-function get_name($name){
-    return $this->$name;
+public function showStudent(){
+    $StudentId = rand(10,15);
+    echo '<br><-----------------Student - '.$StudentId.'---------<br>>';
+    echo "<br>ID :</b> ".$StudentId. "<br>";
+    echo "<br>Name :</b> ".$this->name."<br>";
+    echo "<br>email :</b> ".$this->email."<br>";
+    echo "<br>password :</b> ".$this->password."<br>";
+    echo "<br>address :</b> ".$this->address."<br>";
 }
-function set_color($color){
-    $this->name=$color;
 }
-function get_name($color){
-    return $this->$color;
-}
-$apple=new fruits();
-$apple->set_name('apple');
-$apple->set_color('Red');
-echo "Name: " . $apple->get_name();
-echo"<br>";
-echo "color " . $apple->get_color();
+$student= new Student();
+$student->addStudent('1','Alia','Alia@gmail.com','12345',   'GT Road muridke');
+$student->showStudent();
 
- class furniture{
-     public $name;
-     public $color;
-     public $weight;
- }
- $chair = new furniture();
- $chair->name = 'chair';
- $chair->color='brown';
- $chair->weight='300';
- class fruit{
-     public $name;
-     public $color;
-     public function construct($name,$color){
-         $this->name=$name;
-         $this->color=$color;
-     }
-     protected function intro(){
-         echo "the fruit is{$this->name} and color is {$this->color}.";
-     }
- }
- class strawberry extends fruit{
-     public function message(){
-         echo "i like staberry";
-     }
- }
-$strawberry = new Strawberry("Strawberry", "red");
-$strawberry->message();
-$strawberry->intro();
-?>
-
+//add student form
+//
