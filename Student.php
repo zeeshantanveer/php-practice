@@ -30,8 +30,16 @@ class Student
     }
 }
 
+$name = $nameErr = '';
+if (empty($_POST['name'])){
+    header('student_form.php');
+}
 
 
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+die();
 
 $student = new Student();
 
