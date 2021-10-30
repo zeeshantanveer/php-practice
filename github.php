@@ -129,6 +129,12 @@ $text = 'my name is Alia.... and i am the BS student my name is Alia.... and i a
 
     <div id="head">
         <h1>my website</h1>
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> 87e64c4c7f0d6b88d4beaa14a2fba6947a6ae351
     </div>
     <div class="row mt-5" >
         <div class="col-md-2"></div>
