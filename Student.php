@@ -1,37 +1,47 @@
 <?php
 
-
 class Student
 {
-public $Id, $name, $email, $password, $address;
-public function __construct()
-{
-    $this->Id ='';
-    $this->name ='';
-    $this->email ='';
-    $this->password ='';
-    $this->address ='';
-}
-public function addStudent($Id, $name, $email, $password, $address){
-     $this->Id=1;
-     $this->name=$name;
-     $this->email=$email;
-     $this->password=$password;
-     $this->address=$address;
-}
-public function showStudent(){
-    $StudentId = rand(10,15);
-    echo '<br><-----------------Student - '.$StudentId.'---------<br>>';
-    echo "<br>ID :</b> ".$StudentId. "<br>";
-    echo "<br>Name :</b> ".$this->name."<br>";
-    echo "<br>email :</b> ".$this->email."<br>";
-    echo "<br>password :</b> ".$this->password."<br>";
-    echo "<br>address :</b> ".$this->address."<br>";
-}
-}
-$student= new Student();
-$student->addStudent('1','Alia','Alia@gmail.com','12345',   'GT Road muridke');
-$student->showStudent();
+    public $id, $name, $email, $password, $address;
+    
+    public function __construct(){
+        $this->id = '';
+        $this->name = '';
+        $this->email = '';
+        $this->password = '';
+        $this->address = '';
+    }
 
-//add student form
-//
+    public function addStudent($name, $email, $password, $address){
+        $this->id = 1;
+        $this->name = $name;
+        $this->email = $email;
+        $this->password = $password;
+        $this->address = $address;
+    }
+    public function showStudent(){
+        $studentId = rand(10,15);
+        echo '<br><----------- Student - '.$studentId.' ------------ ><br>';
+        echo "<b>ID :</b> ".$studentId."<br>";
+        echo "<b>Name :</b> ".$this->name."<br>";
+        echo "<b>Email :</b> ".$this->email."<br>";
+        echo "<b>Password :</b> ".$this->password."<br>";
+        echo "<b>Address :</b> ".$this->address."<br>";
+    }
+}
+
+$name = $nameErr = '';
+if (empty($_POST['name'])){
+    header('student_form.php');
+}
+
+
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+die();
+
+$student = new Student();
+
+$student->addStudent('Alia', 'alia@gmail.com', '1234567890', 'GT. Road Muridke');
+$student->showStudent();
