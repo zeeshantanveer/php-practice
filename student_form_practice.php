@@ -24,7 +24,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" name="Email" placeholder="Email" class="form-control">
+                    <input type="text" name="email" placeholder="Email" class="form-control">
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Roll No</label>
-                    <input type="number" name="Roll NO" placeholder="Roll No" class="form-control">
+                    <input type="number" name="roll_no" placeholder="Roll No" class="form-control">
                 </div>
             </div>
         </div>
@@ -48,13 +48,13 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">City Name</label>
-                    <input type="text" name="city name" placeholder="City Name" class="form-control">
+                    <input type="text" name="city_name" placeholder="City Name" class="form-control">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Mobile No</label>
-                    <input type="number" name="mobile No" placeholder="Mobile  No" class="form-control">
+                    <input type="number" name="mobile_no" placeholder="Mobile  No" class="form-control">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="" class="form-label">Explain your self</label>
-                    <textarea name="explain your self" cols="20" rows="5" class="form-control" placeholder="Explain your self"></textarea>
+                    <textarea name="explain_your_self" cols="20" rows="5" class="form-control" placeholder="Explain your self"></textarea>
                 </div>
             </div>
         </div>
@@ -79,11 +79,11 @@
 
             <div class="col-md-6">
                 <strong>Hobbies:</strong><br>
-                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <input type="checkbox" id="hobby1" name="reading" value="Reading">
                 <label for="hobby1">Reading</label><br>
-                <input type="checkbox" id="hobby2" name="hobby2" value="typing">
+                <input type="checkbox" id="hobby2" name="typing" value="typing">
                 <label for="hobby2">Typing</label><br>
-                <input type="checkbox" id="hobby3" name="hobby3" value="Music">
+                <input type="checkbox" id="hobby3" name="music" value="Music">
                 <label for="hobby3">Music</label><br>
             </div>
 

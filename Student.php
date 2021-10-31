@@ -30,18 +30,33 @@ class Student
     }
 }
 
-$name = $nameErr = '';
-if (empty($_POST['name'])){
-    header('student_form.php');
+$name = $email =  $password = $roll_no = $city_name =  $mobile_no = $explain_your_self = $gender = '';
+
+if (!empty($_POST['name'])){
+    $name = $_POST['name'];
+}
+if (!empty($_POST['email'])){
+    $email = $_POST['email'];
+}
+if (!empty($_POST['password'])){
+    $password = $_POST['password'];
+}
+if (!empty($_POST['roll_no'])){
+    $roll_no = $_POST['roll_no'];
+}
+if (!empty($_POST['city_name'])){
+    $city_name = $_POST['city_name'];
+}
+if (!empty($_POST['mobile_no'])){
+    $mobile_no = $_POST['mobile_no'];
+}
+if (!empty($_POST['explain_your_self'])){
+    $explain_your_self = $_POST['explain_your_self'];
+}
+if (!empty($_POST['name'])){
+    $gender = $_POST['gender'];
 }
 
-
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
-die();
-
 $student = new Student();
-
-$student->addStudent('Alia', 'alia@gmail.com', '1234567890', 'GT. Road Muridke');
+$student->addStudent($name, $email, $password, $city_name);
 $student->showStudent();
