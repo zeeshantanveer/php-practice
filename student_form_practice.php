@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Roll No</label>
-                    <input type="number" name="Roll NO" placeholder="Roll No" class="form-control">
+                    <input type="number" name="Roll No" placeholder="Roll No" class="form-control">
                 </div>
             </div>
         </div>
