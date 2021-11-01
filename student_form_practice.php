@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="assets/bootstrap_4/css/bootstrap.min.css">
     <style>
         .jumbotron{
-            background-image: linear-gradient(to right, lightseagreen,lightgoldenrodyellow,lightcoral,lightsteelblue,lightpink,lightcoral,violet);
             border-radius: 10px;
+            background-color: #3300aa;
+            color: white;
         }
+        .jumbotron:hover{
+            background-image: linear-gradient(to right,lightcoral , yellow);
 
+        }
     </style>
-    <title>Student Form</title>
-</head>
+
+
+       <title>Student Form</title>
+       </head>
 <body>
 <div class="container">
-   
-       <div class="jumbotron">
-           <h1>Student Form</h1>
-       </div>
+
+    <div class="jumbotron">
+        <h1>Student Form</h1>
+    </div>
     <form action="Student.php" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                      <label for="">Name</label>
-                      <input type="text" name="name" placeholder="Name" class="form-control">
+                    <label for="">Name</label>
+                    <input type="text" name="name" placeholder="Name" class="form-control">
                 </div>
             </div>
             <div class="col-md-6">
@@ -103,10 +109,10 @@
                     <input type="color" name="color" value="color">
                 </div>
             </div>
-          <div class="col-md-6">
-              <label for=""><strong>Choose file</strong></label></label>
-              <input type="file" name="file">
-          </div>
+            <div class="col-md-6">
+                <label for=""><strong>Choose file</strong></label></label>
+                <input type="file" name="file">
+            </div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -118,7 +124,6 @@
     </form>
 </div>
 </body>
-
 <?php
 //echo'<pre>';
 //session_start();
