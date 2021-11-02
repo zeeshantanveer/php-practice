@@ -19,6 +19,12 @@ class Student
         $this->password = $password;
         $this->address = $address;
     }
+
+    public function saveStudent(){
+        $sql = "";
+
+    }
+
     public function showStudent(){
         $studentId = rand(10,15);
         echo '<br><----------- Student - '.$studentId.' ------------ ><br>';
@@ -80,7 +86,7 @@ if (empty($name) || empty($email) || empty($password) || empty($city_name)){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "phpform";
+$dbname = "phppractice";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -90,12 +96,12 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE student form (
+$sql = "CREATE TABLE student_form (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30),
-email VARCHAR (50),
-password VARCHAR(50)
-address VARCHAR (50) NOT NULL,
+email VARCHAR(50),
+password VARCHAR(50),
+address VARCHAR(50) NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
