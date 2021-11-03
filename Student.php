@@ -86,7 +86,7 @@ if (empty($name) || empty($email) || empty($password) || empty($city_name)){
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "phppractice";
+$dbname = "phpform";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -95,8 +95,10 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$studentsql = "INSERT INTO student (name, email, password, address,)
+VALUES ('Alia', 'Alia@gmail.com', '12345', 'muridke')";
 // sql to create table
-$sql = "CREATE TABLE student_form (
+$sql = "CREATE TABLE student (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30),
 email VARCHAR(50),
@@ -106,10 +108,16 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Table Student form created successfully";
+    echo "Table Student created successfully";
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
+if (mysqli_query($conn,$studentsql )) {
+    echo "Table Student created successfully";
+} else {
+    echo "Error creating table: " . mysqli_error($conn);
+}
+
 
 mysqli_close($conn);
 
