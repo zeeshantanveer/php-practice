@@ -22,7 +22,11 @@
        <title>Student Form</title>
        </head>
 <body>
-<div class="container">
+<div id="btn">
+    <a class="btn btn-primary" href="show_all_students.php">Show all students</a>
+</div>
+
+<br><div class="container">
 
     <div class="jumbotron">
         <h1>Student Form</h1>
@@ -87,7 +91,7 @@
                 <input type="radio" name="gender" value="male"><br>
                 <label for="">female</label>
                 <input type="radio" name="gender" value="female"><br>
-                <label for="">Other</label>
+                <label for="">other</label>
                 <input type="radio" name="gender" value="Other">
             </div>
 
