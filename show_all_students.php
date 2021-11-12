@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<a class="btn btn-primary" href="Student.php">Add student</a>
 <div class="container">
     <h2>Show all students</h2>
     <table class="table">
@@ -21,6 +22,7 @@
             <th>Email</th>
             <th>Address</th>
             <th>Reg Date</th>
+            <th>Action</th>
 
         </tr>
         </thead>
@@ -50,6 +52,7 @@ if ($result->num_rows > 0) {
             <td>".$row["email"]."</td>
             <td>".$row["address"]."</td>
             <td>".$row["reg_date"]."</td>
+            <td><a href=''>Delete</a></td>
         </tr>";
     }
 } else {
