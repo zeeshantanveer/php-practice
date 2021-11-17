@@ -190,6 +190,16 @@ if ($conn->multi_query($sql) === TRUE){
 } else {
     echo "0 results";
 }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "UPDATE student SET name ='Sehar' WHERE id=1";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+} else {
+echo "Error updating record: " . $conn->error;
 
 
 mysqli_close($conn);
