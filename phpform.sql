@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2021 at 07:16 PM
+-- Generation Time: Nov 17, 2021 at 07:19 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `phpform`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `myguests`
+--
+
+CREATE TABLE `myguests` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(30) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -207,9 +221,30 @@ INSERT INTO `student` (`id`, `Name`, `email`, `password`, `address`, `reg_date`)
 (165, 'Mary', 'mary@example.com', '', 'lhr', '2021-11-17 17:46:03'),
 (166, 'Julie', 'julie@example.com', '', 'fslabd', '2021-11-17 17:46:03');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_form`
+--
+
+CREATE TABLE `student_form` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `address` varchar(50) NOT NULL,
+  `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `myguests`
+--
+ALTER TABLE `myguests`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `student`
@@ -218,14 +253,32 @@ ALTER TABLE `student`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `student_form`
+--
+ALTER TABLE `student_form`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `myguests`
+--
+ALTER TABLE `myguests`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
   MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+
+--
+-- AUTO_INCREMENT for table `student_form`
+--
+ALTER TABLE `student_form`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
