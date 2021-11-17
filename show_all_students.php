@@ -40,6 +40,40 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+if (isset($_REQUEST['delete_student']) && !empty($_REQUEST['delete_student'])){
+    $deleteStudentSql = "DELETE FROM student WHERE id=".$_REQUEST['delete_student'];
+    echo "<br>";
+    if ($conn->query($deleteStudentSql) === TRUE) {
+        echo "Record deleted successfully";
+        header("location:".$_SERVER['PHP_SELF']);
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+}
+if (isset($_REQUEST['edit_student']) && !empty($_REQUEST['edit_student'])){
+    $editStudentSql = "SELECT * FROM student WHERE id=".$_REQUEST['edit_student'];
+    $resultStudent = $conn->query($editStudentSql);
+    $studentArr = [];
+
+    if ($resultStudent->num_rows > 0) {
+        // output data of each row
+        while($row = $resultStudent->fetch_assoc()) {
+            if (!empty($row["id"])){
+                $studentArr['id'] = $row["id"];
+                $studentArr['Name'] = $row["Name"];
+                $studentArr['email'] = $row["email"];
+                $studentArr['password'] = $row["password"];
+                $studentArr['address'] = $row["address"];
+                $studentArr['reg_date'] = $row["reg_date"];
+            }
+        }
+    }
+    if (!empty($studentArr)){
+        header("Location: ./edit_student_form.php?".http_build_query($studentArr));
+    }
+
+}
+
 $sql = "SELECT * FROM student";
 $result = $conn->query($sql);
 
@@ -52,7 +86,7 @@ if ($result->num_rows > 0) {
             <td>".$row["email"]."</td>
             <td>".$row["address"]."</td>
             <td>".$row["reg_date"]."</td>
-            <td><a href=''>Delete</a></td>
+            <td><a href='".$_SERVER['PHP_SELF']."?edit_student=".$row["id"]."'>Edit</a> | <a href='".$_SERVER['PHP_SELF']."?delete_student=".$row["id"]."'>Delete</a></td>
         </tr>";
     }
 } else {

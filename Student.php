@@ -140,13 +140,7 @@ if ($conn->query($studentsql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-$sql = "DELETE FROM student WHERE id=5";
-echo "<br>";
-if ($conn->query($sql) === TRUE) {
-    echo "Record deleted successfully";
-} else {
-    echo "Error deleting record: " . $conn->error;
-}
+
 $sql = "UPDATE student SET name='Mohsin' WHERE id=6";
 echo "<br>";
 if ($conn->query($sql) === TRUE) {
@@ -199,8 +193,8 @@ $sql = "UPDATE student SET name ='Sehar' WHERE id=1";
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
 } else {
-echo "Error updating record: " . $conn->error;
-
+    echo "Error updating record: " . $conn->error;
+}
 
 mysqli_close($conn);
 
