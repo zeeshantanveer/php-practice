@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<a class="btn btn-primary" href="Student.php">Add student</a>
+<a class="btn btn-outline-success" href="Student.php">Add student</a>
 <div class="container">
     <h2>Show all students</h2>
     <table class="table">

@@ -16,21 +16,27 @@
             background-image: linear-gradient(to right,lightcoral , yellow);
 
         }
+        #btn{
+            border: 10px;
+            border: #032f62;
+        }
     </style>
 
 
        <title>Student Form</title>
        </head>
+
 <body>
-<div id="btn">
-    <a class="btn btn-primary" href="show_all_students.php">Show all students</a>
-</div>
 
 <br><div class="container">
 
     <div class="jumbotron">
         <h1>Student Form</h1>
     </div>
+    <div id="btn">
+        <a class="btn btn-outline-success" href="show_all_students.php">Show all students</a>
+    </div>
+
     <form action="Student.php" method="post">
         <div class="row">
             <div class="col-md-6">
@@ -121,7 +127,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <input type="submit" value="submit" class="btn btn-primary float-right">
+                    <input type="submit" value="submit" class="btn btn-outline-success float-right">
                 </div>
             </div>
         </div>
